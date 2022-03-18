@@ -1,12 +1,16 @@
 package com.example.model;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
+import java.util.HashSet;
 import java.util.Set;
 
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class Vet extends Person{
-    Set<Speciality> specialities;
+    Set<Speciality> specialities=new HashSet<>();
+
+    public Set<Speciality> getSpecialities() {
+        return specialities;
+    }
+
+    public void setSpecialities(Set<Speciality> specialities) {
+        this.specialities = specialities;
+    }
 }

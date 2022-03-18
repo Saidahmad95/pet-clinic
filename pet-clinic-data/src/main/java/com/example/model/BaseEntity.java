@@ -1,12 +1,16 @@
 package com.example.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import javax.persistence.MappedSuperclass;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@MappedSuperclass
 public class BaseEntity {
     private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
