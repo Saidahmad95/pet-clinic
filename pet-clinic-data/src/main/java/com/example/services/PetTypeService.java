@@ -1,7 +1,6 @@
-package com.example.services.map;
+package com.example.services;
 
 import com.example.model.PetType;
-import com.example.services.CrudService;
 
 public interface PetTypeService extends CrudService<PetType,Long> {
 }

@@ -5,8 +5,8 @@ import com.example.model.Pet;
 import com.example.model.PetType;
 import com.example.model.Vet;
 import com.example.services.OwnerService;
+import com.example.services.PetTypeService;
 import com.example.services.VetService;
-import com.example.services.map.PetTypeService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

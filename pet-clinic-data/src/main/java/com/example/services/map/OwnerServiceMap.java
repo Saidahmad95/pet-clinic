@@ -4,6 +4,7 @@ import com.example.model.Owner;
 import com.example.model.Pet;
 import com.example.services.OwnerService;
 import com.example.services.PetService;
+import com.example.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
