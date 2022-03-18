@@ -5,7 +5,7 @@
     <title>Vet</title>
 </head>
 <body>
-<h2>Vets list</h2>
+<h1>Vets list</h1>
 <table class="table table-striped">
     <thead>
     <tr>
@@ -18,9 +18,9 @@
     <tr th:each="vet:${vets}">
         <td th:text="${vet.id}"></td>
         <td th:text="${vet.firstName}"></td>
+        <td th:text="${vet.lastName}"></td>
     </tr>
     </tbody>
-    <h1>Vet page</h1>
 </table>
 </body>
 </html>
