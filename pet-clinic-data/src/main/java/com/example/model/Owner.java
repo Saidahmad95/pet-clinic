@@ -1,14 +1,16 @@
 package com.example.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+
+import java.util.Set;
 
 
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 @Data
-@AllArgsConstructor
-public class Owner extends Person{
-
+public class Owner extends Person {
+    private String address;
+    private String city;
+    private String telephone;
+    private Set<Pet> pets;
 }
