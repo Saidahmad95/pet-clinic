@@ -1,9 +1,10 @@
 package com.example.model;
 
+import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public class Person extends BaseEntity{
+public class Person extends BaseEntity{     
     private String firstName;
     private String lastName;
 

@@ -1,13 +1,18 @@
 package com.example.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-
+@Entity
+@Table(name = "owners")
 public class Owner extends Person {
     private String address;
     private String city;
     private String telephone;
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "owner",fetch = FetchType.EAGER)
+    @JoinColumn(name = "owner_id")
     private Set<Pet> pets=new HashSet<>();
 
     public String getAddress() {
